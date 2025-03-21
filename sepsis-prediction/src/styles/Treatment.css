@@ -1,0 +1,83 @@
+/* Treatment.css */
+
+/* Container for the entire page */
+.treatment-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .treatment-title {
+    font-size: 36px;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .treatment-content {
+    display: flex;
+    flex-direction: row;  /* Align text and slider side by side */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;  /* Set a max width for the content */
+  }
+  
+  .treatment-text {
+    flex: 1;
+    padding-right: 20px;  /* Space between text and images */
+  }
+  
+  .treatment-text h2 {
+    font-size: 28px;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+  }
+  
+  .treatment-text p {
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .treatment-slider {
+    flex: 1;
+    max-width: 600px;  /* Set max width for the slider */
+  }
+  
+  .slider-item {
+    display: flex;
+    flex-direction: column;  /* Stack images vertically */
+    gap: 10px;  /* Space between images */
+  }
+  
+  .treatment-image {
+    width: 100%;  /* Ensure the image takes up equal space */
+    height: 250px;  /* Set the height of each image */
+    object-fit: cover;  /* Ensure images fill the area without distortion */
+    border-radius: 8px;
+  }
+  
+  .slick-prev, .slick-next {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slick-prev {
+    left: -40px;
+  }
+  
+  .slick-next {
+    right: -40px;
+  }
+  

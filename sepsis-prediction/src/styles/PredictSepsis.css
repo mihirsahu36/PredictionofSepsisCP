@@ -1,0 +1,137 @@
+/* Wrapper container for the entire PredictSepsis page */
+.predict-sepsis-wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Title styling outside the image container */
+.predict-sepsis-title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 20px; /* Creates space between title and container */
+  
+  position: relative;
+  z-index: 1; /* Ensures the title stays above the image container */
+}
+
+/* Container for the Predict Sepsis page */
+.predict-sepsis-container {
+  position: relative;
+  max-width: 800px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight opacity for content */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Add background image with translucent effect inside the container */
+.predict-sepsis-container::before {
+  content: "";
+  background-image: url('../images/PredictSepsis/PredictSepsis1.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;  /* Translucent effect */
+  z-index: -1; /* Ensures the image stays behind the content */
+}
+
+/* Content section for buttons */
+.predict-sepsis-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between buttons */
+  position: relative;
+  z-index: 1;
+  padding: 30px 0;
+  min-height: 200px; /* Ensures space for buttons */
+}
+
+/* Primary button styling */
+.predict-sepsis-container .predict-sepsis-button {
+  padding: 12px 24px;
+  margin-top: 120px;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.predict-sepsis-container .predict-sepsis-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.predict-sepsis-container .predict-sepsis-button:active {
+  background-color: #388e3c;
+  transform: scale(0.98);
+}
+
+/* Secondary button styling */
+.secondary-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #1e3a8a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.secondary-button:hover {
+  background-color: #3b82f6;
+  transform: scale(1.05);
+}
+
+.secondary-button:active {
+  background-color: #1e3a8a;
+  transform: scale(0.98);
+}
+
+/* Display status (loading, error, or success message) */
+.loading-indicator, .error-message, .sofa-score, .predict-sepsis-result {
+  font-size: 20px;
+  color: #374151;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.sofa-score {
+  font-size: 22px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.sofa-score h3 {
+  color: #1e3a8a;
+}
+
+.sofa-score p {
+  font-size: 18px;
+  color: #10b981; /* Green for no sepsis */
+}
+
+.predict-sepsis-result {
+  color: #4b5563;
+}

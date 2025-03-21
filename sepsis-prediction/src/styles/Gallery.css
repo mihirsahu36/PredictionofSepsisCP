@@ -1,0 +1,82 @@
+/* Gallery.css */
+
+/* Container for the entire page */
+.gallery-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the title horizontally */
+  }
+  
+  .gallery-title {
+    font-size: 42px;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Text section */
+  .gallery-text {
+    width: 100%;
+    max-width: 800px;  /* Set max width for the text */
+    text-align: center;
+    margin-bottom: 40px;  /* Space between text and the image slider */
+  }
+  
+  .gallery-text p {
+    font-size: 20px;  /* Larger description font size */
+    color: #4b5563;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Slider for Gallery Images */
+  .gallery-slider {
+    width: 100%;
+    max-width: 800px;  /* Set max width for the slider */
+  }
+  
+  .slider-item {
+    display: flex;
+    flex-direction: column;  /* Stack images vertically */
+    gap: 10px;  /* Space between images */
+  }
+  
+  .gallery-image {
+    width: 100%;  /* Ensure images take up equal space */
+    height: 250px;  /* Set the height of each image */
+    object-fit: cover;  /* Ensure images fill the area without distortion */
+    border-radius: 8px;  /* Add rounded corners to the images */
+  }
+  
+  /* Style the arrows */
+  .slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent dark background */
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    top: 50%;  /* Center vertically */
+    transform: translateY(-50%);  /* Center the arrows vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick-prev {
+    left: -40px;  /* Position the left arrow */
+  }
+  
+  .slick-next {
+    right: -40px;  /* Position the right arrow */
+  }
+  
+  /* Hover effect for arrows */
+  .slick-prev:hover, .slick-next:hover {
+    background-color: #4f81bd;  /* Darker blue on hover */
+    cursor: pointer;  /* Pointer cursor on hover */
+  }
+  

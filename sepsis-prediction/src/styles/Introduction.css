@@ -1,0 +1,119 @@
+/* Introduction.css */
+
+/* Container for the entire page */
+.introduction-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the title horizontally */
+}
+
+/* Title styling */
+.introduction-title {
+    font-size: 42px;  /* Larger font size for the title */
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Content with description on the left and image slider on the right */
+.introduction-content {
+    display: flex;
+    flex-direction: row;  /* Align text and image slider side by side */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;  /* Set a max width for the content */
+}
+
+.introduction-text {
+    flex: 1;
+    padding-right: 20px;  /* Space between text and image slider */
+}
+
+.introduction-text h2 {
+    font-size: 30px;  /* Larger subtitle size */
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.introduction-text p {
+    font-size: 20px;  /* Larger description font size */
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.introduction-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #374151;
+    margin-bottom: 20px;
+}
+
+/* Slider for Sepsis Images */
+.introduction-slider {
+    flex: 1;
+    max-width: 600px;  /* Set max width for the slider */
+    position: relative;  /* Position relative to ensure arrows are positioned correctly */
+}
+
+.slider-item {
+    display: flex;
+    flex-direction: column;  /* Stack images vertically */
+    gap: 40px;  /* Space between images */
+}
+
+.introduction-image {
+    width: 100%;  /* Ensure images take up equal space */
+    height: 270px;  /* Set the height of each image */
+    object-fit: cover;  /* Ensure images fill the area without distortion */
+    border-radius: 8px;  /* Add rounded corners to the images */
+}
+
+/* Style the arrows */
+.slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent dark background */
+    color: white;  /* White arrow color */
+    border: none;  /* Remove any border */
+    font-size: 30px;  /* Larger font size for the arrows */
+    padding: 15px;  /* Increase the size of the arrows */
+    border-radius: 50%;  /* Circular arrows */
+    z-index: 100;
+    position: absolute;
+    top: 50%;  /* Center vertically */
+    transform: translateY(-50%);  /* Center the arrows vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Position the arrows */
+.slick-prev {
+    left: -40px;  /* Position the left arrow */
+}
+
+.slick-next {
+    right: -40px;  /* Position the right arrow */
+}
+
+/* Hover effect for arrows */
+.slick-prev:hover, .slick-next:hover {
+    background-color: #4f81bd;  /* Darker blue on hover */
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+
+/* "Know More" Button styling (same as Home page button) */
+.introduction-text .know-more-button {
+  background-color: #1e3a8a;  /* Blue background color */
+  color: white;  /* White text */
+  padding: 10px 20px;  /* Padding for the button */
+  border: none;  /* No border */
+  border-radius: 5px;  /* Rounded corners */
+  cursor: pointer;  /* Pointer cursor on hover */
+}
+
+.introduction-text .know-more-button:hover {
+  background-color: #4f81bd;  /* Darker blue on hover */
+}

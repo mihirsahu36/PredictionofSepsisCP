@@ -1,0 +1,91 @@
+/* Home.css */
+
+/* Container for the entire page */
+.home-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the title horizontally */
+  }
+  
+  /* Title styling */
+  .home-title {
+    font-size: 42px;  /* Larger font size for the title */
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Content with description on the left and image on the right */
+  .home-content {
+    display: flex;
+    flex-direction: row;  /* Align text and image side by side */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;  /* Set a max width for the content */
+  }
+  
+  .home-text {
+    flex: 1;
+    padding-right: 20px;  /* Space between text and image */
+    font-size: 20px;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  .home-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Button container styling */
+  .button-container {
+    display: flex;
+    gap: 20px;  /* Space between the buttons */
+    margin-top: 20px;  /* Space from the text */
+  }
+  
+  /* "Know More" Button styling */
+  .home-container .know-more-button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 35px;
+  }
+  
+  .home-container .know-more-button:hover {
+    background-color: #4f81bd;
+  }
+  
+  /* "Predict Sepsis" Button styling */
+  .home-container .predict-sepsis-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 35px;
+  }
+  
+  .home-container .predict-sepsis-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Image styling on the right */
+  .home-image {
+    flex: 1;
+  }
+  
+  .home1-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  
+  

@@ -1,0 +1,33 @@
+.info-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .info-container h1 {
+    color: #1e3a8a;
+    font-size: 32px;
+  }
+  
+  .info-container p {
+    color: #4b5563;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .info-container ul {
+    color: #374151;
+    font-size: 18px;
+    margin: 20px 0;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .info-container img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+
+  
+  

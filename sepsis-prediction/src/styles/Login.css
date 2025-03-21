@@ -1,0 +1,100 @@
+/* Container for the entire login/signup page */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Title styling */
+.login-container h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields styling */
+.login-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #1e3a8a;
+}
+
+/* Button styling */
+.login-form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.login-form button:active {
+  background-color: #1e3a8a;
+  transform: scale(0.98);
+}
+
+/* Error message styling */
+.error {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Toggle button styling */
+.toggle-button {
+  background: none;
+  color: #1e3a8a;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+.toggle-button:hover {
+  color: #388e3c;
+}
+
+/* Show/Hide password button styling */
+.show-password-btn {
+  background: none;
+  color: #1e3a8a;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: -5px;
+  align-self: flex-start;
+}
+
+.show-password-btn:hover {
+  color: #388e3c;
+}
